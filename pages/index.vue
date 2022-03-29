@@ -1,7 +1,7 @@
 <template>
   <div class="header">
   <h1>
-  Obada Amarneh
+ King Obada Amarneh
   </h1>
   </div>
 </template>

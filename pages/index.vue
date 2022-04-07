@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1> fggggg  </h1>
+    <h1> banan  </h1>
   </div>
 </template>
 

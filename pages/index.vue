@@ -1,8 +1,6 @@
 <template>
   <div class="header">
-  <h1>
- King Obada Amarneh
-  </h1>
+    <h1> Obada Amarneh </h1>
   </div>
 </template>
 
@@ -20,10 +18,7 @@ export default {
   justify-content: center;
   align-items: center;
 }
-h1{
-  font-size: 78px ;
+h1 {
+  font-size: 78px;
 }
-
-
-
 </style>

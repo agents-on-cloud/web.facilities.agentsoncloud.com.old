@@ -1,14 +1,13 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   server:{
     port:30201
   },
   head: {
-    titleTemplate: '%s - frontend',
-    title: 'frontend',
+    titleTemplate: '%s - obada',
+    title: 'obada',
     htmlAttrs: {
       lang: 'en',
     },
@@ -50,6 +49,7 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: false,
       themes: {

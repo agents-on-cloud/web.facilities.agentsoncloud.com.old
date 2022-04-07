@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1> king Obada Amarneh </h1>
+    <h1> rami khaled </h1>
   </div>
 </template>
 

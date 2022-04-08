@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1> banan  </h1>
+    <h1> Obada Amarneh   </h1>
   </div>
 </template>
 

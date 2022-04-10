@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <h1> Obada Amarneh   </h1>
+    <h1> odai   </h1>
   </div>
 </template>
 

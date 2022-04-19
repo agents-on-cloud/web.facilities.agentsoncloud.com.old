@@ -6,7 +6,7 @@ export default {
     port:30201
   },
   head: {
-    titleTemplate: '%s - obada',
+    titleTemplate: '%s - facilities',
     title: 'obada',
     htmlAttrs: {
       lang: 'en',

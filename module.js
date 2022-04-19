@@ -6,7 +6,7 @@ import serveStatic from "serve-static";
 // with a lot of pages it might be worth considering a folder pass
 // to dynamically create this list
 const pages = [
-  "pages/facilities",
+  "pages/Facilities",
 
 
 ];

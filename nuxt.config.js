@@ -5,6 +5,7 @@ export default {
   server:{
     port:30201
   },
+  // relaese_1
   head: {
     titleTemplate: '%s - facilities',
     title: 'obada',

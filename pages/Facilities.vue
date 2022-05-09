@@ -1,10 +1,6 @@
 <template>
   <div class="header">
-    <h1> obada     </h1>
-
-
-
-<h2>s6d4646</h2>
+    <h1> obada  </h1>
   </div>
 </template>
 

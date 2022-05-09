@@ -10,6 +10,7 @@ pipeline {
           
             sshPublisher(
             continueOnError: false, failOnError: true,
+          
             publishers: [
                 sshPublisherDesc(
                 configName: "dev server",

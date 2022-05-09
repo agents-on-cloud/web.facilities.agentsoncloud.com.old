@@ -8,24 +8,24 @@ pipeline {
             steps {
             echo("I am in build")
           
-            // sshPublisher(
-            // continueOnError: false, failOnError: true,
-            // publishers: [
-            //     sshPublisherDesc(
-            //     configName: "dev server",
-            //     verbose: true,
-            //     transfers: [
-//                     sshTransfer(
-//                         execCommand: " rm -rf /var/www/web.facilities.agentsoncloud.com"
-//                           ),
-//                     sshTransfer(
-//                         execCommand: "cd /var/www/ && git clone --branch release_1 https://github.com/agents-on-cloud/web.facilities.agentsoncloud.com.git"
-//                           ),
-//                sshTransfer(
-//                         execCommand: "cd /var/www/web.facilities.agentsoncloud.com && npm i "
-//                          ),
-            //     ])
-            // ])
+            sshPublisher(
+            continueOnError: false, failOnError: true,
+            publishers: [
+                sshPublisherDesc(
+                configName: "dev server",
+                verbose: true,
+                transfers: [
+                    sshTransfer(
+                        execCommand: " rm -rf /var/www/web.facilities.agentsoncloud.com"
+                          ),
+            //         sshTransfer(
+            //             execCommand: "cd /var/www/ && git clone --branch release_1 https://github.com/agents-on-cloud/web.facilities.agentsoncloud.com.git"
+            //               ),
+               sshTransfer(
+                        execCommand: "cd /var/www/web.facilities.agentsoncloud.com && npm i "
+                         ),
+                ])
+            ])
             }
         }
         
@@ -38,18 +38,18 @@ pipeline {
      stage('Deploy') {
             steps {
                 echo("I am in Deploy")
-//                  sshPublisher(
-//             continueOnError: false, failOnError: true,
-//             publishers: [
-//                 sshPublisherDesc(
-//                 configName: "dev server",
-//                 verbose: true,
-//                 transfers: [
-//                 sshTransfer(
-//                         execCommand: "cd /var/www/web.facilities.agentsoncloud.com &&  npm run build &&  pm2 start "
-//                          )
-//                 ])
-//             ])
+                 sshPublisher(
+            continueOnError: false, failOnError: true,
+            publishers: [
+                sshPublisherDesc(
+                configName: "dev server",
+                verbose: true,
+                transfers: [
+                sshTransfer(
+                        execCommand: "cd /var/www/web.facilities.agentsoncloud.com &&  npm run build &&  pm2 start "
+                         )
+                ])
+            ])
             }
 
         }

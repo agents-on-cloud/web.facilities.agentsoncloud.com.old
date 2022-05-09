@@ -7,6 +7,7 @@ pipeline {
          stage('Build') {
             steps {
             echo("I am in build")
+          
             sshPublisher(
             continueOnError: false, failOnError: true,
             publishers: [
@@ -50,7 +51,7 @@ pipeline {
                 ])
             ])
             }
-            
+
         }
         
     }

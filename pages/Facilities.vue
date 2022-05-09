@@ -1,7 +1,6 @@
 <template>
   <div class="header">
     <h1> obada  </h1>
-    
   </div>
 </template>
 

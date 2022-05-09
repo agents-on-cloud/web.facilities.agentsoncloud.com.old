@@ -18,9 +18,9 @@ pipeline {
                     sshTransfer(
                         execCommand: " rm -rf /var/www/web.facilities.agentsoncloud.com"
                           ),
-                    // sshTransfer(
-                    //     execCommand: "cd /var/www/ && git clone --branch release_1 git@github.com:agents-on-cloud/web.facilities.agentsoncloud.com.git"
-                    //       ),
+                    sshTransfer(
+                        execCommand: "cd /var/www/ && git clone --branch release_1 git@github.com:agents-on-cloud/web.facilities.agentsoncloud.com.git"
+                          ),
                sshTransfer(
                         execCommand: "cd /var/www/web.facilities.agentsoncloud.com && npm i "
                          ),
